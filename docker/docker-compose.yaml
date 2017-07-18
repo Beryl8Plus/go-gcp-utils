@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  app:
+    image: go-gcp-utils
+    container_name: go-gcp-utils
+    volumes:
+      - ../:/go/src/github.com/Beryl8Plus/blacktie/go-gcp-utils
+    #command: alias containerip='hostname -I'
+    #command: "alias containerip='hostname -I' && alias dev_appserver='dev_appserver.py -A app --host=0.0.0.0 app.yaml'"

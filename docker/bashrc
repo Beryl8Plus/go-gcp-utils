@@ -1,0 +1,5 @@
+alias containerip="hostname -I"
+alias dev_appserver='containerip && dev_appserver.py -A $GCLOUD_PROJECTID --host=0.0.0.0 --admin_host=0.0.0.0 app.yaml'
+
+#gcloud config set project $GCLOUD_PROJECTID
+#gcloud auth activate-service-account --key-file=chatbot_V1-43eb0a693649.json
