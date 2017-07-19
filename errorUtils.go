@@ -7,7 +7,7 @@ import (
 	"runtime/debug"
 )
 
-func handlePanic(ctx context.Context, w http.ResponseWriter) {
+func HandlePanic(ctx context.Context, w http.ResponseWriter) {
 	if r := recover(); r != nil {
 		if err, ok := r.(error); ok {
 			log.Errorf(ctx, err.Error())
